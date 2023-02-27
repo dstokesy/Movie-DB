@@ -1,0 +1,29 @@
+.header {
+    border-bottom: 3px solid var(--colour-accent);
+}
+
+.logo {
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+}
+
+.link_list {
+    margin: 0 -1rem;
+    list-style-type: none;
+    text-align: right;
+
+    > li {
+        display: inline-block;
+        margin: 0 1rem;
+    }
+}
+
+.button {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+
+    &_active {
+        border-bottom: 2px solid var(--colour-accent);
+    }
+}

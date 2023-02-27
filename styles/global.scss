@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --colour-background: #242424;
+        --colour-accent: #6074d1;
+        --colour-text: #ffffff;
+        --colour-border: #bdbdbd;
+        --gutter: 1rem;
+        --font-body: 'Montserrat', sans-serif;
+    }
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: var(--colour-background);
+    font-family: var(--font-body);
+    color: var(--colour-text);
+}

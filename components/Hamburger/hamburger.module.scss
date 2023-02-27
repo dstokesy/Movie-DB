@@ -1,0 +1,28 @@
+.wrapper {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 26px;
+    height: 18px;
+}
+
+.line {
+    position: absolute;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 3px;
+    border-radius: 15%;
+    background: var(--colour-text);
+}
+
+.middle {
+    top: 7px;
+    opacity: 1;
+}
+
+.bottom {
+    top: 14px;
+    left: 0;
+}
