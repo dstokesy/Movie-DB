@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Layout from '../layouts';
-import { Show } from '@/components';
+import { HorizontalScroll, Section, ShowCard } from '@/components';
 import demoContent from '../demo/content';
 
 const Page = () => {
@@ -10,11 +10,37 @@ const Page = () => {
                 <title>Movie DB</title>
             </Head>
 
-            {demoContent.map((item) => (
-                <div key={item.id} className="col">
-                    <Show item={item} />
-                </div>
-            ))}
+            <div className="container mx-auto">
+                <Section title="All Time Classics">
+                    <HorizontalScroll>
+                        {demoContent.map((item) => (
+                            <div key={item.id}>
+                                <ShowCard show={item} />
+                            </div>
+                        ))}
+                    </HorizontalScroll>
+                </Section>
+
+                <Section title="Action Movies">
+                    <HorizontalScroll>
+                        {demoContent.map((item) => (
+                            <div key={item.id}>
+                                <ShowCard show={item} />
+                            </div>
+                        ))}
+                    </HorizontalScroll>
+                </Section>
+
+                <Section title="Male Lead">
+                    <HorizontalScroll>
+                        {demoContent.map((item) => (
+                            <div key={item.id}>
+                                <ShowCard show={item} />
+                            </div>
+                        ))}
+                    </HorizontalScroll>
+                </Section>
+            </div>
         </Layout>
     );
 };

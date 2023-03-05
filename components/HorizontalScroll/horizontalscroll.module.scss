@@ -1,0 +1,23 @@
+.scroll {
+    margin: 0 -1rem;
+    white-space: norwrap;
+}
+
+.wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    &::-webkit-scrollbar {
+        height: 4px;
+    }
+    &::-webkit-scrollbar-track {
+        background: rgba(#000, 0.1);
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: #b7b7b7;
+    }
+}

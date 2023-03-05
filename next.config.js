@@ -2,7 +2,7 @@
 const nextConfig = {
     reactStrictMode: true,
     images: {
-        domains: ['www.headlesscms-october.co.uk']
+        domains: ['image.tmdb.org']
     }
 };
 
