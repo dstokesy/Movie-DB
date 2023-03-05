@@ -34,7 +34,7 @@ export const Header: React.FC = () => {
                                         dispatch(setFiltersTypeState('movie'))
                                     }
                                 >
-                                    Movies
+                                    Movie
                                 </button>
                             </li>
                             <li>
@@ -49,7 +49,7 @@ export const Header: React.FC = () => {
                                         dispatch(setFiltersTypeState('tv'))
                                     }
                                 >
-                                    Tv Shows
+                                    Tv
                                 </button>
                             </li>
                         </ul>

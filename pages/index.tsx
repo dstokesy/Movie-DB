@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import Layout from '../layouts';
+import { Show } from '@/components';
+import demoContent from '../demo/content';
 
 const Page = () => {
     return (
@@ -8,7 +10,11 @@ const Page = () => {
                 <title>Movie DB</title>
             </Head>
 
-            <h1>test</h1>
+            {demoContent.map((item) => (
+                <div key={item.id} className="col">
+                    <Show item={item} />
+                </div>
+            ))}
         </Layout>
     );
 };

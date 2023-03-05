@@ -4,12 +4,13 @@
 
 @layer base {
     :root {
-        --colour-background: #242424;
-        --colour-accent: #6074d1;
-        --colour-text: #ffffff;
-        --colour-border: #bdbdbd;
+        --colour-background: #101010;
+        --colour-accent: #ba2403;
+        --colour-text: #e9dfe0;
+        --colour-border: #e9dfe0;
         --gutter: 1rem;
         --font-body: 'Montserrat', sans-serif;
+        --font-heading: 'Gloock', serif;
     }
 }
 

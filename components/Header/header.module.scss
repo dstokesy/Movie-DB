@@ -3,8 +3,10 @@
 }
 
 .logo {
-    font-size: 1.25rem;
-    letter-spacing: 2px;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-family: var(--font-heading);
 }
 
 .link_list {
@@ -20,8 +22,6 @@
 
 .button {
     padding: 0.5rem;
-    font-size: 0.8rem;
-    text-transform: uppercase;
 
     &_active {
         border-bottom: 2px solid var(--colour-accent);
