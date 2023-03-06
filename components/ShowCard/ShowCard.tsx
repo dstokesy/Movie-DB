@@ -18,10 +18,19 @@ export default function ShowCard({ show }: { show: IShow }) {
         );
     }
 
+    let rating;
+
+    if (show.vote_average) {
+        let percentage = Math.round(show.vote_average * 10);
+
+        rating = <div className={styles.rating}>{percentage}</div>;
+    }
+
     return (
         <div className={styles.card}>
             {imageMarkup}
             {show.title}
+            {rating}
         </div>
     );
 }

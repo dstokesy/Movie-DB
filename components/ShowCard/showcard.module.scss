@@ -1,4 +1,5 @@
 .card {
+    position: relative;
     min-width: 200px;
     margin: 0 0 1rem;
     padding: 0 1rem;
@@ -9,4 +10,18 @@
     display: block;
     width: 100%;
     margin: 0 0 1rem;
+}
+
+.rating {
+    position: absolute;
+    bottom: 1.75rem;
+    right: 0;
+    width: 1.75rem;
+    height: 1.75rem;
+    line-height: 1.75rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 50%;
+    background: var(--colour-rating);
+    color: var(--colour-rating-text);
 }

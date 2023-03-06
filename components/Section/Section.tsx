@@ -1,5 +1,4 @@
 import styles from './section.module.scss';
-import cx from 'classnames';
 
 export default function Section({
     children,
