@@ -7,8 +7,8 @@ export default function Search() {
             <input
                 type="text"
                 name="keywords"
-                className={cx(styles.input, 'text-left sm:text-right')}
-                placeholder="Search..."
+                className={cx(styles.input)}
+                placeholder="Search by keywords..."
             />
         </div>
     );

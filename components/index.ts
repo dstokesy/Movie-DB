@@ -4,4 +4,6 @@ export * from './Hamburger';
 export * from './Search';
 export * from './ShowCard';
 export * from './Section';
+export * from './Filters';
+export * from './MobileNavigation';
 export * from './HorizontalScroll';

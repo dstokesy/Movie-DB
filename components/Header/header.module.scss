@@ -8,22 +8,3 @@
     font-weight: bold;
     font-family: var(--font-heading);
 }
-
-.link_list {
-    margin: 0 -1rem;
-    list-style-type: none;
-    text-align: right;
-
-    > li {
-        display: inline-block;
-        margin: 0 1rem;
-    }
-}
-
-.button {
-    padding: 0.5rem;
-
-    &_active {
-        border-bottom: 2px solid var(--colour-accent);
-    }
-}

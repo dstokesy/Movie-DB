@@ -1,18 +1,13 @@
 .input {
     display: block;
     width: 100%;
-    max-width: 120px;
     padding: 0.5rem 1rem;
     border: 0;
+    border-bottom: 1px solid #4e4e4e;
     background: none;
-
-    @media (min-width: 640px) {
-        max-width: 480px;
-    }
 
     &:focus {
         text-align: left;
         outline: none;
-        background: #1d1d1d;
     }
 }

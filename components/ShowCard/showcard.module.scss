@@ -1,9 +1,12 @@
 .card {
     position: relative;
-    min-width: 200px;
     margin: 0 0 1rem;
     padding: 0 1rem;
     text-align: center;
+
+    @media (min-width: 640px) {
+        min-width: 200px;
+    }
 }
 
 .image {

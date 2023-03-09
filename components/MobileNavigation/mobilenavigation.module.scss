@@ -1,0 +1,22 @@
+.popout {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    background: var(--colour-background-popout);
+    transform: translateX(100%);
+    transition: transform 0.3s;
+
+    &_active {
+        transform: translateX(0%);
+    }
+
+    &_header {
+        padding: 1.875rem 1.5rem;
+        border-bottom: 3px solid var(--colour-accent);
+    }
+}
