@@ -4,16 +4,15 @@
 
 @layer base {
     :root {
-        --colour-background: #101010;
+        --colour-background: #1f252d;
         --colour-background-popout: #1d1d1d;
-        --colour-accent: #ba2403;
+        --colour-accent: #5740cf;
         --colour-text: #e9dfe0;
-        --colour-border: #e9dfe0;
+        --colour-border: #333333;
         --colour-rating: #dfb31d;
         --colour-rating-text: #000000;
         --gutter: 1rem;
-        --font-body: 'Montserrat', sans-serif;
-        --font-heading: 'Gloock', serif;
+        --font: 'Open Sans', sans-serif;
     }
 }
 
@@ -23,7 +22,8 @@ body {
     height: 100%;
     width: 100%;
     margin: 0;
+    font-family: var(--font);
+    font-weight: 300;
     background: var(--colour-background);
-    font-family: var(--font-body);
     color: var(--colour-text);
 }

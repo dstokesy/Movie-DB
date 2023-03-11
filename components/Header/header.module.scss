@@ -1,10 +1,8 @@
 .header {
-    border-bottom: 3px solid var(--colour-accent);
+    background: var(--colour-accent);
 }
 
 .logo {
     font-size: 1.5rem;
-    letter-spacing: 4px;
     font-weight: bold;
-    font-family: var(--font-heading);
 }
