@@ -2,6 +2,7 @@ import cx from 'classnames';
 import styles from './showcard.module.scss';
 import { IShow } from '../../types/Show';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function ShowCard({ show }: { show: IShow }) {
     let imageMarkup;
@@ -27,10 +28,10 @@ export default function ShowCard({ show }: { show: IShow }) {
     }
 
     return (
-        <div className={styles.card}>
+        <Link href={`/show/${show.id}`} className={styles.card}>
             {imageMarkup}
-            {show.title}
+            <div className={styles.title}>{show.title}</div>
             {rating}
-        </div>
+        </Link>
     );
 }

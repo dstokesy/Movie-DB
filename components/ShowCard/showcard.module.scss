@@ -1,6 +1,7 @@
 .card {
     position: relative;
-    margin: 0 0 1rem;
+    display: block;
+    margin: 0;
     padding: 0 1rem;
     text-align: center;
 
@@ -15,9 +16,13 @@
     margin: 0 0 1rem;
 }
 
+.title {
+    font-size: 0.85rem;
+}
+
 .rating {
     position: absolute;
-    bottom: 1.75rem;
+    top: -0.85rem;
     right: 0;
     width: 1.75rem;
     height: 1.75rem;
