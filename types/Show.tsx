@@ -5,7 +5,7 @@ type CollectionType = {
     backdrop_path: string;
 };
 
-type GenreType = {
+export type GenreType = {
     id: number;
     name: string;
 };
