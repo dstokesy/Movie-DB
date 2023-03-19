@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { GetServerSideProps } from 'next';
 import axios from 'axios';
 import config from './../api/config';
+import { store, persistor, wrapper } from '../store';
 import Layout from '../layouts';
 import { IShow } from './../types/Show';
 import { HorizontalScroll, Section, ShowCard } from '@/components';
@@ -45,9 +46,13 @@ const Page: React.FC<IPageData> = (props) => {
 
 export const getServerSideProps: GetServerSideProps = async () => {
     try {
+        const showType = 'movie';
+
         const response = await axios.get(
             config.baseUrl +
-                'genre/movie/list?api_key=' +
+                'genre/' +
+                showType +
+                '/list?api_key=' +
                 config.apiKey +
                 '&language=en-GB'
         );
@@ -59,7 +64,9 @@ export const getServerSideProps: GetServerSideProps = async () => {
 
             let genreResponse = await axios.get(
                 config.baseUrl +
-                    'discover/movie?api_key=' +
+                    'discover/' +
+                    showType +
+                    '?api_key=' +
                     config.apiKey +
                     '&language=en-GB' +
                     '&sort_by=popularity.desc' +
