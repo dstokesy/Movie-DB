@@ -5,13 +5,6 @@ type CollectionType = {
     backdrop_path: string;
 };
 
-export type GenreType = {
-    id: number;
-    name: string;
-};
-
-type GenreList = GenreType[];
-
 type ProductionCompaniesType = {
     id: number;
     logo_path: string | null;
@@ -59,7 +52,21 @@ export interface IShow {
     status?: string;
     tagline?: string;
     title: string;
+    name?: string;
     video?: boolean;
     vote_average?: number;
     vote_count?: number;
 }
+
+export type GenreType = {
+    id: number;
+    name: string;
+};
+
+export type GenreShowsType = {
+    id: number;
+    name: string;
+    shows: IShow[];
+};
+
+type GenreList = GenreType[];

@@ -1,9 +1,8 @@
-import Head from 'next/head';
 import axios from 'axios';
+import Head from 'next/head';
+import Layout from '../../layouts';
 import { ShowDetails } from '@/components';
 import config from './../../api/config';
-import Layout from '../../layouts';
-import styles from './show.module.scss';
 import { IShow } from './../../types/Show';
 import type { GetServerSideProps } from 'next';
 
@@ -37,7 +36,7 @@ const Page: React.FC<IPageData> = (props) => {
 export async function getServerSideProps({ params }: { params: QParams }) {
     const response = await axios.get(
         config.baseUrl +
-            'tv/' +
+            'movie/' +
             params.id +
             '?api_key=' +
             config.apiKey +

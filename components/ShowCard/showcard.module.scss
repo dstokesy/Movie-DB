@@ -1,13 +1,10 @@
 .card {
     position: relative;
     display: block;
+    min-width: 200px;
     margin: 0;
     padding: 0 1rem;
     text-align: center;
-
-    @media (min-width: 640px) {
-        min-width: 200px;
-    }
 }
 
 .image {

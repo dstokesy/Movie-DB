@@ -1,10 +1,9 @@
-import Head from 'next/head';
-import { GetServerSideProps } from 'next';
 import axios from 'axios';
-import config from './../api/config';
-import Layout from '../layouts';
-import { GenreShowsType } from './../types/Show';
+import Layout from '../../layouts';
 import { HorizontalScroll, Section, ShowCard } from '@/components';
+import config from './../../api/config';
+import { GetServerSideProps } from 'next';
+import { GenreShowsType } from './../../types/Show';
 
 interface IPageData {
     genres?: GenreShowsType[];
@@ -14,10 +13,6 @@ interface IPageData {
 const Page: React.FC<IPageData> = (props) => {
     return (
         <Layout layout="default">
-            <Head>
-                <title>Movie DB</title>
-            </Head>
-
             <div className="container px-4 sm:px-0 mx-auto">
                 {props.genres &&
                     props.genres.map((genre, i) => (
@@ -39,7 +34,7 @@ const Page: React.FC<IPageData> = (props) => {
 
 export const getServerSideProps: GetServerSideProps = async () => {
     try {
-        const showType = 'movie';
+        const showType = 'tv';
 
         const response = await axios.get(
             config.baseUrl +
