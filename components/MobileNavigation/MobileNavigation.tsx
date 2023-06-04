@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import cx from 'classnames';
 import styles from './mobilenavigation.module.scss';
-import { Hamburger, ContentType, Filters } from '@/components';
+import { Hamburger, Filters } from '@/components';
 import { disableBodyScroll, enableBodyScroll } from '../../lib/BodyScroll';
 
 export const MobileNavigation: React.FC = () => {
@@ -35,7 +35,6 @@ export const MobileNavigation: React.FC = () => {
                 </div>
 
                 <div className="p-6">
-                    <ContentType />
                     <Filters />
                 </div>
             </div>

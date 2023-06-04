@@ -10,7 +10,7 @@ export default function Section({
     let headingMarkup;
 
     if (title) {
-        headingMarkup = <h2 className={styles.heading}>{title}</h2>;
+        headingMarkup = <h2 className="heading">{title}</h2>;
     }
 
     return (

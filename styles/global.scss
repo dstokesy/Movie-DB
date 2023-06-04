@@ -7,6 +7,7 @@
         --colour-background: #1f252d;
         --colour-background-popout: #1d1d1d;
         --colour-accent: #5740cf;
+        --colour-accent-darker: #412ea3;
         --colour-text: #e9dfe0;
         --colour-border: #333333;
         --colour-rating: #dfb31d;
@@ -26,4 +27,9 @@ body {
     font-weight: 300;
     background: var(--colour-background);
     color: var(--colour-text);
+}
+
+.heading {
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
 }

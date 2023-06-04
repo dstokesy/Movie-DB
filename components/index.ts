@@ -5,7 +5,6 @@ export * from './Search';
 export * from './ShowCard';
 export * from './ShowDetails';
 export * from './Section';
-export * from './ContentType';
 export * from './Filters';
 export * from './MobileNavigation';
 export * from './HorizontalScroll';
